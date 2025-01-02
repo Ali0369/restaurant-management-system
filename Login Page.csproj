@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F64C9D9-0E7B-4C2E-89A5-AA331F6EFBF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LOGIN_PAGE</RootNamespace>
+    <AssemblyName>LOGIN PAGE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\OneDrive\Desktop\LOGINFORMPROJECT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\OneDrive\Desktop\LOGINFORMPROJECT.Designer.cs">
+      <DependentUpon>LOGINFORMPROJECT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addProduct.Designer.cs">
+      <DependentUpon>addProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStaff.Designer.cs">
+      <DependentUpon>AddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADDTABLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDTABLE.Designer.cs">
+      <DependentUpon>ADDTABLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkReservation.Designer.cs">
+      <DependentUpon>checkReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KITCHEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KITCHEN.Designer.cs">
+      <DependentUpon>KITCHEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\addcategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="model\addcategory.Designer.cs">
+      <DependentUpon>addcategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS.Designer.cs">
+      <DependentUpon>POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="products.Designer.cs">
+      <DependentUpon>products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sampleview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sampleview.Designer.cs">
+      <DependentUpon>Sampleview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStaffCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStaffCategory.Designer.cs">
+      <DependentUpon>AddStaffCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffCategory.Designer.cs">
+      <DependentUpon>StaffCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STAFFFORMPROJECT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STAFFFORMPROJECT.Designer.cs">
+      <DependentUpon>STAFFFORMPROJECT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPageProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPageProject.Designer.cs">
+      <DependentUpon>MainPageProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TABLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TABLE.Designer.cs">
+      <DependentUpon>TABLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addtablereservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addtablereservation.Designer.cs">
+      <DependentUpon>addtablereservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tablereservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tablereservation.Designer.cs">
+      <DependentUpon>tablereservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TABLES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TABLES.Designer.cs">
+      <DependentUpon>TABLES.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\..\OneDrive\Desktop\LOGINFORMPROJECT.resx">
+      <DependentUpon>LOGINFORMPROJECT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addProduct.resx">
+      <DependentUpon>addProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStaff.resx">
+      <DependentUpon>AddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADDTABLE.resx">
+      <DependentUpon>ADDTABLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkReservation.resx">
+      <DependentUpon>checkReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KITCHEN.resx">
+      <DependentUpon>KITCHEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPageProject.resx">
+      <DependentUpon>MainPageProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="model\addcategory.resx">
+      <DependentUpon>addcategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS.resx">
+      <DependentUpon>POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="products.resx">
+      <DependentUpon>products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sampleview.resx">
+      <DependentUpon>Sampleview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStaffCategory.resx">
+      <DependentUpon>AddStaffCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffCategory.resx">
+      <DependentUpon>StaffCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STAFFFORMPROJECT.resx">
+      <DependentUpon>STAFFFORMPROJECT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TABLE.resx">
+      <DependentUpon>TABLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addtablereservation.resx">
+      <DependentUpon>addtablereservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tablereservation.resx">
+      <DependentUpon>tablereservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TABLES.resx">
+      <DependentUpon>TABLES.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RES12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\STAFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house-black-silhouette-without-door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple-users-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple-users-silhouette1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple-users-silhouette %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pos-terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pos-terminal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reserved.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fast food restaurant logo restaurant logo - Made with PosterMyWall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fast food restaurant logo restaurant logo - Made with PosterMyWall1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reservation2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table4.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
